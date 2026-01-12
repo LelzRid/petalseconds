@@ -18,7 +18,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.Arr.Exps.At,
 		C3.Plugins.System.Acts.AddVar,
-		C3.Plugins.Arr.Acts.SetXY
+		C3.Plugins.Arr.Acts.SetXY,
+		C3.Plugins.System.Acts.ResetGlobals
 	];
 };
 self.C3_JsPropNameTable = [
@@ -45,6 +46,7 @@ self.C3_JsPropNameTable = [
 	{txtsalah: 0},
 	{txtpesan: 0},
 	{Audio: 0},
+	{txtcoba: 0},
 	{NoSoal: 0},
 	{Skor: 0},
 	{JumlahSalah: 0}
@@ -72,5 +74,6 @@ self.InstanceType = {
 	txtbenar: class extends self.ITextInstance {},
 	txtsalah: class extends self.ITextInstance {},
 	txtpesan: class extends self.ITextInstance {},
-	Audio: class extends self.IInstance {}
+	Audio: class extends self.IInstance {},
+	txtcoba: class extends self.ITextInstance {}
 }
