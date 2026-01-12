@@ -1272,6 +1272,8 @@ function or(l, r)
 }
 
 self.C3_ExpressionFuncs = [
+		() => 0,
+		() => "",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => and("Jawaban Benar: ", v0.GetValue());
@@ -1284,8 +1286,6 @@ self.C3_ExpressionFuncs = [
 		() => "Hebat! Kamu pinter banget!",
 		() => "Belajar lagi ya! Jangan menyerah!",
 		() => "BGM",
-		() => 0,
-		() => "",
 		p => {
 			const n0 = p._GetNode(0);
 			const v1 = p._GetNode(1).GetVar();
