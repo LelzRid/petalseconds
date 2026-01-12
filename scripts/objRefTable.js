@@ -5,16 +5,19 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text,
 		C3.Plugins.Touch,
 		C3.Plugins.Arr,
+		C3.Plugins.Audio,
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
 		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.System.Cnds.CompareVar,
+		C3.Plugins.System.Cnds.Else,
+		C3.Plugins.Audio.Cnds.IsTagPlaying,
+		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Touch.Cnds.OnTouchObject,
 		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.Arr.Exps.At,
 		C3.Plugins.System.Acts.AddVar,
-		C3.Plugins.System.Cnds.Else,
-		C3.Plugins.System.Cnds.CompareVar,
-		C3.Plugins.Text.Acts.SetText,
-		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.Arr.Acts.SetXY
 	];
 };
@@ -41,6 +44,7 @@ self.C3_JsPropNameTable = [
 	{txtbenar: 0},
 	{txtsalah: 0},
 	{txtpesan: 0},
+	{Audio: 0},
 	{NoSoal: 0},
 	{Skor: 0},
 	{JumlahSalah: 0}
@@ -67,5 +71,6 @@ self.InstanceType = {
 	txtprogres: class extends self.ITextInstance {},
 	txtbenar: class extends self.ITextInstance {},
 	txtsalah: class extends self.ITextInstance {},
-	txtpesan: class extends self.ITextInstance {}
+	txtpesan: class extends self.ITextInstance {},
+	Audio: class extends self.IInstance {}
 }
